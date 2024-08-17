@@ -8,13 +8,14 @@ import { Component } from 'react';
 function App() {
   return (
     <div>
-    <Nav/>
+    
     {/* <Herosec/> */}
     <Router>
+    <Nav/>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
+        <Route exact path="/login" element={<LoginPage />} />
         
-        <Route path="/" element={<Herosec />} />
+        <Route exact path="/" element={<Herosec />} />
         
       </Routes>
     </Router>
