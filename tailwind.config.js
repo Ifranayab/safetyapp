@@ -12,12 +12,9 @@ module.exports = {
       fontFamily: {
         platino: ['Platino', 'serif'],
         comic: ['Comic Sans MS', 'cursive'],
-        'brush': ['Pacifico', 'sans-serif'],
-        'thick-caps': ['Anton', 'sans-serif'], 
-        // spotlight: ['Spotlight', 'sans-serif'], 
-        // berkshire: ['Berkshire Swash', 'cursive'],
-        // yourfont: ['Your Font Name', 'sans-serif'],
+        'simplecaps': ['Bebas Neue', 'sans-serif'], 
       },
+      
      fontWeight:{
       extremebold: '1200',
      },

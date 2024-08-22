@@ -12,24 +12,24 @@ export class Herosec extends Component {
       <div className='h-[600px] flex '>
         <div className='w-2/3  bg-orange-100  '>
         <div className='flex flex-col justify-center items-center pt-48'>
-        <p className=' text-gradient mb-8  text-7xl font-black font-thick-caps'>
+        <p className=' text-gradient mb-8  text-5xl font-black font-comic'>
             THE PROGRESS OF A NATION 
         </p>
-        <p className=' text-gradient mb-8  text-7xl font-black font-thick-caps'>
+        <p className=' text-gradient mb-8  text-5xl font-black font-comic'>
              WILL BE BLOCKED IF
         </p>
-        <p className='text-gradient mb-20  text-7xl font-[900] font-thick-caps'>
+        <p className='text-gradient mb-24  text-5xl font-[900] font-comic'>
          IT'S WOMEN ARE LOCKED
         </p>
         </div>
        <div className='flex flex-col justify-center items-center'>
-       <p className='mb-3 text-4xl text2-gradient font-platino font-bold'>
+       <p className='mb-3 text-3xl text2-gradient font-platino font-bold'>
             "Nothing is more important than empathy for another
         </p>
         {/* <p className='mb-3 text-3xl'>
             than empathy for another
         </p> */}
-        <p className='text-4xl text2-gradient font-platino font-bold'>
+        <p className='text-3xl text2-gradient font-platino font-bold'>
             human being's suffering"
         </p>
        </div>
