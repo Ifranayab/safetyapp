@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-
-import './index.css'; 
+import './index.css';
 import contact from '../images/contact.jpg';
 import yoga from '../images/yoga.jpg';
 import pod from '../images/pod.jpg';
+import { Link } from 'react-router-dom';
+
 
 const Cards = () => {
   return (
