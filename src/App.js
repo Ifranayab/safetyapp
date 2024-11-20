@@ -7,30 +7,28 @@ import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
 import Cards from './components/CardsSec';
 import Footer from './components/Footer';
+import Chatting from './components/Chatting';
 
 function App() {
   const location = useLocation();
 
   return (
-    <div className='bg-orange-100 overflow-x-hidden'>
+    <div className='bg-orange-100 overflow-x-hidden h-full'>
       {/* Render Nav only if not on the login page */}
-      {location.pathname !== "/login" && <Nav />}
+      {location.pathname == "/" && <Nav />}
 
       <Routes>
         <Route exact path="/login" element={<LoginPage />} />
         <Route exact path="/" element={<><Herosec /><Cards /></>} />
+        <Route exact path="/chatBot" element={<Chatting />} />
       </Routes>
 
-      {/* About Us and Contact Us sections always rendered */}
-      <div id="about-us">
-        <Aboutus />
-      </div>
-      <div id="contact-us">
-        <Contact />
-      </div>
-
       {/* Render Footer only on the home page */}
+      {location.pathname === "/" && <Aboutus/>}
+      {location.pathname === "/" && <Contact />}
       {location.pathname === "/" && <Footer />}
+    
+     
     </div>
   );
 }
