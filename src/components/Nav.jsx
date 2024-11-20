@@ -6,9 +6,9 @@ import { faEnvelope,faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Nav =() =>{
   return (
-    <div className='h-20 bg-custom-gradient fixed w-[100vw]'>
+    <div className='h-20 bg-custom-gradient fixed w-[100vw] z-10'>
       <div className='flex  justify-start items-center py-6 px-6'>
-        <img  className='h-10 hover:border-2 hover:border-white hover:rounded-sm' src={logo} alt="logo" />
+        <img  className='h-10 cursor-pointer' src={logo} alt="logo" />
           <Link className='mx-5 text-xl font-bold text-white cursor-pointer hover:border-2 hover:border-white hover:rounded-sm' to="/">Home</Link>
           <Link className='mx-5 text-xl font-bold text-white cursor-pointer hover:border-2 hover:border-white hover:rounded-sm'>About Us</Link>
           <Link className='mx-5 text-xl font-bold text-white cursor-pointer hover:border-2 hover:border-white hover:rounded-sm'>Contact Us</Link>
