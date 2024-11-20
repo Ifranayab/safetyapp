@@ -159,9 +159,13 @@ const LoginPage = () => {
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
     },
     header: {
+      // marginTop:'100px',
       textAlign: 'center',
       marginBottom: '20px',
     },
+    // formLogin:{
+    //   marginTop:'150px',
+    // },
     formGroup: {
       marginBottom: '15px',
     },
@@ -242,6 +246,7 @@ const LoginPage = () => {
         </form>
       </div>
     </div>
+    // </div>
   );
 };
 

@@ -6,8 +6,15 @@ import LoginPage from './components/Login';
 import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
 import Cards from './components/CardsSec';
+import WellnessSchedule from './components/WellnessSchedule';
+// import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import PodcastAndArticles from './components/PodcastAndArticles';
+import Yoga from './components/Yoga';
+import Chat from './components/Chat';
 import Footer from './components/Footer';
 import Chatting from './components/Chatting';
+
 
 function App() {
   const location = useLocation();

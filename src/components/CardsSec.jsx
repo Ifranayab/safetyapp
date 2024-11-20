@@ -3,7 +3,6 @@ import './index.css';
 import contact from '../images/contact.jpg';
 import yoga from '../images/yoga.jpg';
 import pod from '../images/pod.jpg';
-import { Link } from 'react-router-dom';
 
 const Cards = () => {
   return (
@@ -33,7 +32,8 @@ const Cards = () => {
             </a>
             <Link to="/chatBot">
             <div className="footer hover:border-2 hover:border-white hover:rounded-sm">
-              <span>View More</span>
+            <Link to="/chat">
+            <button>View More</button></Link>
             </div>
             </Link>
           </div>
@@ -57,7 +57,8 @@ const Cards = () => {
               </p>
             </a>
             <div className="footer hover:border-2 hover:border-white hover:rounded-sm">
-              <span>View More</span>
+            <Link to="/yoga">
+            <button>View More</button></Link>
             </div>
           </div>
         </div>
@@ -80,7 +81,9 @@ const Cards = () => {
               </p>
             </a>
             <div className="footer hover:border-2 hover:border-white hover:rounded-sm">
-              <span>View More</span>
+              <Link to="/podcast">
+              <button>View More</button></Link>
+              
             </div>
           </div>
         </div>
