@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css'; // Assuming you're using the same CSS
+import './index.css';
 import contact from '../images/contact.jpg';
 import yoga from '../images/yoga.jpg';
 import pod from '../images/pod.jpg';
