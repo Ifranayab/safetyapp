@@ -24,7 +24,7 @@ const LoginPage = () => {
   // Inline styles
   const styles = {
     container: {
-      maxWidth: '400px',
+      maxWidth: '400px', 
       margin: 'auto',
       padding: '20px',
       border: '1px solid #ccc',
@@ -32,9 +32,13 @@ const LoginPage = () => {
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
     },
     header: {
+      // marginTop:'100px',
       textAlign: 'center',
       marginBottom: '20px',
     },
+    // formLogin:{
+    //   marginTop:'150px',
+    // },
     formGroup: {
       marginBottom: '15px',
     },
@@ -64,9 +68,11 @@ const LoginPage = () => {
   };
 
   return (
+    <div>
     <div style={styles.container}>
       <h1 style={styles.header}>Login</h1>
       <form onSubmit={handleSubmit}>
+        <div style={styles.formLogin}>
         <div style={styles.formGroup}>
           <label htmlFor="name" style={styles.label}>Name:</label>
           <input
@@ -104,7 +110,10 @@ const LoginPage = () => {
           />
         </div>
         <button type="submit" style={styles.button} onMouseOver={(e) => e.target.style.backgroundColor = styles.buttonHover.backgroundColor} onMouseOut={(e) => e.target.style.backgroundColor = styles.button.backgroundColor}>Submit</button>
+        </div>
+      
       </form>
+    </div>
     </div>
   );
 };
