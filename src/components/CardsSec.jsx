@@ -3,6 +3,7 @@ import './index.css';
 import contact from '../images/contact.jpg';
 import yoga from '../images/yoga.jpg';
 import pod from '../images/pod.jpg';
+import { Link } from 'react-router-dom';
 
 const Cards = () => {
   return (
@@ -16,7 +17,7 @@ const Cards = () => {
           <a href="#" className="card1_img">
             <img
               src={contact}
-              alt="Emergency SOS"
+              alt="ChatBot"
               className="card1img"
               loading="lazy"
             />
@@ -26,8 +27,8 @@ const Cards = () => {
             <a href="#" className="cardtitleanchor">
               <h2 className="cardtitle">Emergency SOS</h2>
               <p className="card1desc">
-                Add Your Emergency Contacts to it. It sends your location and an emergency
-                note/alert to them.
+               Enjoy Your Chatting.
+               Ask anything
               </p>
             </a>
             <Link to="/chatBot">

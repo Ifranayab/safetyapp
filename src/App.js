@@ -11,7 +11,7 @@ import WellnessSchedule from './components/WellnessSchedule';
 import ContactUs from './components/ContactUs';
 import PodcastAndArticles from './components/PodcastAndArticles';
 import Yoga from './components/Yoga';
-import Chat from './components/Chat';
+
 import Footer from './components/Footer';
 import Chatting from './components/Chatting';
 
@@ -28,6 +28,8 @@ function App() {
         <Route exact path="/login" element={<LoginPage />} />
         <Route exact path="/" element={<><Herosec /><Cards /></>} />
         <Route exact path="/chatBot" element={<Chatting />} />
+        <Route exact path="/yoga" element={<Yoga />} />
+        <Route exact path="/podcast" element={<PodcastAndArticles />} />
       </Routes>
 
       {/* Render Footer only on the home page */}
