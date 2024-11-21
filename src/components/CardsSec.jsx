@@ -17,7 +17,7 @@ const Cards = () => {
           <a href="#" className="card1_img">
             <img
               src={contact}
-              alt="ChatBot"
+              alt="Chat"
               className="card1img"
               loading="lazy"
             />

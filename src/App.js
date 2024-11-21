@@ -6,14 +6,14 @@ import LoginPage from './components/Login';
 import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
 import Cards from './components/CardsSec';
-import WellnessSchedule from './components/WellnessSchedule';
+//import WellnessSchedule from './components/WellnessSchedule';
 // import AboutUs from './components/AboutUs';
-import ContactUs from './components/ContactUs';
+//import ContactUs from './components/ContactUs';
 import PodcastAndArticles from './components/PodcastAndArticles';
 import Yoga from './components/Yoga';
 
 import Footer from './components/Footer';
-import Chatting from './components/Chatting';
+import Chat from './components/Chat';
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route exact path="/login" element={<LoginPage />} />
         <Route exact path="/" element={<><Herosec /><Cards /></>} />
-        <Route exact path="/chatBot" element={<Chatting />} />
+        <Route exact path="/Chat" element={<Chat />} />
         <Route exact path="/yoga" element={<Yoga />} />
         <Route exact path="/podcast" element={<PodcastAndArticles />} />
       </Routes>
