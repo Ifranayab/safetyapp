@@ -31,10 +31,10 @@ function App() {
 
     try {
       const response = await axios({
-        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyCejYjBosLQLwUXeLqnAxnPpIPxsaeb01c",
+        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyC7vJYdyiPqjhDtujUsqKu0Mvr7sCXUVQU",
         method: "post",
         data: {
-          contents: [{ parts: [{ text: currentQuestion }] }],
+          contents: [{ parts: [{ text: currentQuestion }] }], 
         },
       });
       const aiResponse = response.data.candidates[0].content.parts[0].text;
@@ -52,18 +52,12 @@ function App() {
       <div className="h-full max-w-4xl mx-auto flex flex-col p-3">
         {/* Fixed Header */}
         <header className="text-center py-4">
-          <a
-            href="https://github.com/Vishesh-Pandey/chat-ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            <h1 className="text-4xl font-bold text-blue-500 hover:text-blue-600 transition-colors">
-              Chat AI
-            </h1>
-          </a>
+          <h1 className="text-4xl font-bold text-blue-500 hover:text-blue-600 transition-colors">
+            Chat AI
+          </h1>
         </header>
-        {/* Scrollable Chat Container - Updated className */}
+
+        {/* Scrollable Chat Container */}
         <div
           ref={chatContainerRef}
           className="flex-1 overflow-y-auto mb-4 rounded-lg bg-white shadow-lg p-4 hide-scrollbar"
@@ -81,7 +75,6 @@ function App() {
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
                     <span className="text-blue-500">🔧</span> Personal Development
-
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
                     <span className="text-blue-500">📝</span> Health and Wellness Question
@@ -118,6 +111,7 @@ function App() {
             </div>
           )}
         </div>
+
         {/* Fixed Input Form */}
         <form onSubmit={generateAnswer} className="bg-white rounded-lg shadow-lg p-4">
           <div className="flex gap-2">
