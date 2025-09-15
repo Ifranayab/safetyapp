@@ -11,10 +11,6 @@
 
 HTML · CSS · JavaScript · Tailwind CSS · React.js
 
-## 🎥 Live Demo
-
-[▶️ View Live](#) *(https://we-care-ten-iota.vercel.app/#)*
-
 ---
 
 *Empowering women through content-driven wellness tech.*
