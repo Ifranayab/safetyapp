@@ -2,13 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 
-// const Nav = () => {
-//   const scrollToSection = (sectionId) => {
-//     const element = document.getElementById(sectionId);
-//     if (element) {
-//       element.scrollIntoView({ behavior: 'smooth' });
-//     }
-//   };
 const Nav=()=>{
   return (
     <div className='h-20 bg-custom-gradient '>
